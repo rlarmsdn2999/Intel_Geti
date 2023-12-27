@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformationActivity">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="410dp"
+        android:layout_height="727dp"
+        android:alpha="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+    <TextView
+        android:id="@+id/bugTitle"
+        android:layout_width="363dp"
+        android:layout_height="80dp"
+        android:background="#2B4AF4"
+        android:fontFamily="@font/font1"
+        android:gravity="center"
+        android:text="해충 종류"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="404dp"
+        android:layout_height="618dp"
+        app:layout_constraintStart_toStartOf="@+id/bugTitle"
+        app:layout_constraintTop_toBottomOf="@+id/bugTitle" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

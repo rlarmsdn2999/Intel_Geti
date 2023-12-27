@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-50dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="363dp"
+            android:layout_height="80dp"
+            android:background="#2B4AF4"
+            android:fontFamily="@font/font1"
+            android:gravity="center"
+            android:text="해충 탐색기"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="196dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="52dp"
+            android:onClick="ee"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chip3"
+            tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#03A9F4"
+            android:onClick="onImageViewClick"
+            android:text="게시판"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="@+id/chip2"
+            app:layout_constraintTop_toBottomOf="@+id/chip2" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#979090"
+            android:onClick="information2"
+            android:text="해충 정보"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="@+id/chip1"
+            app:layout_constraintTop_toBottomOf="@+id/chip1" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip1"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="52dp"
+            android:backgroundTint="#4CAF50"
+            android:onClick="cameraBtn"
+            android:text="탐색기"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="5dp"
+            android:alpha="0.3"
+            android:onClick="cameraBtn"
+            app:layout_constraintStart_toStartOf="@+id/chip1"
+            app:layout_constraintTop_toTopOf="@+id/chip1"
+            app:srcCompat="@drawable/im1" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="5dp"
+            android:alpha="0.3"
+            android:onClick="information2"
+            app:layout_constraintStart_toStartOf="@+id/chip2"
+            app:layout_constraintTop_toTopOf="@+id/chip2"
+            app:srcCompat="@drawable/im2" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="5dp"
+            android:alpha="0.3"
+            android:onClick="onImageViewClick"
+            app:layout_constraintStart_toStartOf="@+id/chip3"
+            app:layout_constraintTop_toTopOf="@+id/chip3"
+            app:srcCompat="@drawable/im3" />
+
+        <ImageView
+            android:id="@+id/giude"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="312dp"
+            android:layout_marginTop="5dp"
+            android:onClick="giude"
+            app:layout_constraintStart_toStartOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:srcCompat="@drawable/im4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

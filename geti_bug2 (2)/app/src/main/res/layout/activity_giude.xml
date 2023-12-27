@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiudeActivity">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="363dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/font2"
+        android:text="세스코 게시판으로 가서 정보를 공유 할 수 있음"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="363dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:background="#03A9F4"
+        android:fontFamily="@font/font2"
+        android:gravity="center"
+        android:text="게시판"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="363dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/font2"
+        android:text="해충에 대한 정보를 자세히 볼 수 있음"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="363dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:background="#979090"
+        android:fontFamily="@font/font2"
+        android:gravity="center"
+        android:text="해충 정보"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="363dp"
+        android:layout_height="80dp"
+        android:background="#2B4AF4"
+        android:fontFamily="@font/font1"
+        android:gravity="center"
+        android:text="도움말"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="363dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/font2"
+        android:text="사진 촬영 및 이미지 업로드를 하여 해충을 판별하여 해충의 정보를 간략히 볼 수 있음"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="363dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:background="#4CAF50"
+        android:fontFamily="@font/font2"
+        android:gravity="center"
+        android:text="탐색기"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+</androidx.constraintlayout.widget.ConstraintLayout>
